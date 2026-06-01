@@ -14,7 +14,8 @@ Parallel tasks
 - Getting started with Docker.
 - Explore dockerfiler.
 - Who are our users? Dependencies?
-
+- How to add data to a container? Where: in the `~/data` directory.
+- How to add scripts to a container? Where: in the `~/scripts` directory.
 
 ## Ressource
 
