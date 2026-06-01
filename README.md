@@ -2,11 +2,19 @@
 
 - Dania, Joao, Ata, Laurent, Sneha (online).
 
-## First aim
+## Genral aim
 
 I would like to create a new container with my packages and my data,
 and be able to easily share this container with other users through
 [docker hub](https://hub.docker.com/).
+
+Parallel tasks
+
+- Create a docker file from a DESCRIPTION file.
+- Getting started with Docker.
+- Explore dockerfiler.
+- Who are our users? Dependencies?
+
 
 ## Ressource
 
