@@ -6,7 +6,7 @@
 
 I would like to create a new container with my packages and my data,
 and be able to easily share this container with other users through
-[docker hub](https://hub.docker.com/) (see the [SimpleBiocContainer](https://github.com/lgatto/SimpleBiocContainer) package).
+[docker hub](https://hub.docker.com/) (see [SimpleBiocContainer](https://github.com/lgatto/SimpleBiocContainer)).
 
 Parallel tasks
 
