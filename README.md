@@ -1,6 +1,8 @@
+This work is not continuing in [SimpleBiocContainer](https://github.com/lgatto/SimpleBiocContainer).
+
 ## Participants
 
-- Dania, Joao, Ata, Laurent, Sneha (online).
+- Dania, Joao, Ata, Laurent, Sneha (online), Michael.
 
 ## General aim
 
