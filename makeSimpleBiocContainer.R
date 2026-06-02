@@ -1,4 +1,30 @@
-makeSimpleBiocContainer <- function(package,
+getProjectPackages <- function(project_dir = "."){
+  if(!requireNamespace("renv", quietly = TRUE)){
+    install.packages("renv")
+  }
+  files_in_dir = list.files(path = project_dir,
+                            pattern = "\\.R$",
+                            recursive = TRUE)
+  if(length(files_in_dir) == 0){
+    stop("No R packages Found.")
+  }
+  packages <- list()
+  for (file in files_in_dir){
+    dependencies <- renv::dependencies(file)
+    if ( !is.null(dependencies) || !nrow(dependencies) == 0) {
+    message("adding new deps")
+    packages <- c(packages, dependencies$Package)
+    }
+  }
+  exclude <- c("BiocManager", "renv")
+  packages <- unique(packages)
+  packages <- setdiff(packages,exclude)
+  return(packages)
+}
+
+
+
+makeSimpleBiocContainer <- function(path = ".",
                                     container = "mycontainer",
                                     data = NULL,
                                     script = NULL) {
@@ -12,6 +38,7 @@ makeSimpleBiocContainer <- function(package,
     message("Creating the container directory 🪐.")
     dir.create(container)
     message("Creating the Dockerfile 🔔.")
+    package <- getProjectPackages()
     df <- file.path(container, "Dockerfile")
     stopifnot(file.create(df))
     v <- as.character(BiocManager::version())
