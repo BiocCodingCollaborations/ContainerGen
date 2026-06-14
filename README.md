@@ -1,4 +1,4 @@
-This work is not continuing in [SimpleBiocContainer](https://github.com/lgatto/SimpleBiocContainer).
+This work is continuing in [SimpleBiocContainer](https://github.com/lgatto/SimpleBiocContainer).
 
 ## Participants
 
